@@ -1,0 +1,30 @@
+.title {
+ display: flex;
+ justify-content: center;
+ margin-top: 10%;
+}
+
+.content {
+  width: 600px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+.button-wrapper button {
+  width: 200px;
+}
+.tabel-user {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.tabel-user .card {
+  margin-left: 16px;
+  margin-right: 16px;
+}
