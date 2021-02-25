@@ -31,19 +31,16 @@ let list = [
       PW.setAttribute("type","password")
       PW.setAttribute("value",`${list[i][2]}`)
       PW.innerHTML = `Password : ${list[i][2]}`
+      PW.setAttribute("id",`show${i}`)
       //buat tombol show dan delete
       const showButton = document.createElement("button");
       showButton.innerHTML = "Show";
       showButton.classList.add("show-btn");
-      showButton.setAttribute("type", "submit")
+      showButton.setAttribute("onclick",`show(${i})`)
       const deleteButton = document.createElement("button");
       deleteButton.innerHTML = "Delete";
       deleteButton.classList.add("delete-btn");
       deleteButton.setAttribute("type", "submit")
-
-      
-
-
       //append delete user dan pw
       userPW.appendChild(user)
       userPW.appendChild(PW)
@@ -52,12 +49,21 @@ let list = [
       userBox.appendChild(userPW)
       // append id pw 
       idList.appendChild(userBox);
-
-    //   situs.innerText = `${list[i][0]} -- ${list[i][1]}`;
-    //   situs.classList.add("todo-item");
-    
-    //   // create completed button
-    //   // append to todoList
+      
+      //   situs.innerText = `${list[i][0]} -- ${list[i][1]}`;
+      //   situs.classList.add("todo-item");
+      //   // create completed button
+      //   // append to todoList
     }
+}
+
+render()
+function show(i) {
+  var x = document.getElementById(`show${i}`);
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
   }
-  render()
+}
+
