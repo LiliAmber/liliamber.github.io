@@ -1,7 +1,7 @@
 let list = [
-    ["Steam","Miracle","123456789"],
-    ["Facebook","amir@google.com","987654321"],
-    ["Twitter","amir98","122222"]
+    ["Steam","Miracle","1odfi56789"],
+    ["Facebook","amir@google.com","QpAd4321"],
+    ["Twitter","amir98","12asdaf2222"]
   ]
 
   const idList = document.querySelector(".tabel-user");
@@ -13,6 +13,7 @@ let list = [
       userBox.classList.add("card");
       userBox.classList.add("border-primary");
       userBox.classList.add("mb-3");
+      userBox.setAttribute("id",`no${i}`)
       
     
       // create div buat situs
@@ -40,7 +41,7 @@ let list = [
       const deleteButton = document.createElement("button");
       deleteButton.innerHTML = "Delete";
       deleteButton.classList.add("delete-btn");
-      deleteButton.setAttribute("type", "submit")
+      deleteButton.setAttribute("onclick", `hapus(${i})`)
       //append delete user dan pw
       userPW.appendChild(user)
       userPW.appendChild(PW)
@@ -67,3 +68,8 @@ function show(i) {
   }
 }
 
+
+function hapus(i){
+    let x = document.getElementById(`no${i}`)
+    x.remove()
+}
