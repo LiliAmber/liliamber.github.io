@@ -1,24 +1,10 @@
 
-// let list = [
-//     ["Steam","Miracle","1odfi56789"],
-//     ["Facebook","amir@google.com","QpAd4321"],
-//     ["Twitter","amir98","12asdaf2222"]
-//   ]
+let list = [
+    ["Steam","Miracle","1odfi56789"],
+    ["Facebook","amir@google.com","QpAd4321"],
+    ["Twitter","amir98","12asdaf2222"]
+  ]
 
-const fs = require('fs')
-const username = ''
-const password = ''
-const url = ''
-
-function afterAdd () {
-  const data = require('./data')
-  data,push({url, username, password}) 
-  fs.writeFileSync(`./data.json`, JSON.stringify(data, null, 4)) 
-  
-  const dataYangDiolah = require('./data.')
-  //buat loop manual disini untuk ubah array of object jdi array of array
-  return dataYangDiolah.map (user => [user.url, user.user, user.password])
-}
 // let list = namafunction()
   const idList = document.querySelector(".tabel-user");
   function render() {
