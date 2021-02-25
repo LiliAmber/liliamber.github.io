@@ -1,4 +1,4 @@
-// //Close User List
+//Close User List
 // const close = document.querySelectorAll('.delete');
 // // console.log(close)
 // for (let i = 0 ; i < close.length; i++)
@@ -9,14 +9,13 @@
 // 	// console.log(e)
 // });
 // }
+// const edit = document.querySelectorAll('.icon-pencil')
 
-// // const edit = document.querySelectorAll('.icon-pencil')
-
-// // for (let i = 0; i < edit.length; i++){
-// // 	edit[i].addEventListener('click', function(e){
-// // 		// console.log (e)
-// // 	})
-// // }
+// for (let i = 0; i < edit.length; i++){
+// 	edit[i].addEventListener('click', function(e){
+// 		// console.log (e)
+// 	})
+// }
 // function edit(){
 // 	const e = window.event
 // 	const editButtonWrapper = e.target.parentElement.parentElement.nextElementSibling
@@ -34,10 +33,11 @@
 let list = []
 function tambahData(event) {
   event.preventDefault()
+  let url = document.getElementById('url').value
   let username = document.getElementById('username').value 
   let password = document.getElementById('password').value
 
-  list.push([username, password])
+  list.push([url, username, password])
 }
 
 const idList = document.querySelector(".tabel-user");
@@ -122,6 +122,16 @@ function hapus(i){
     x.remove()
 }
 
+
+/*
+  IDEATION FITUR EDIT
+
+  -akses data yg sudah di dapat dari user
+  -(kalo data nya dlm bentuk array of array, akses pake index,
+    kalo dlm bentuk array of objct, akses brdasarkan key)
+  -re assign data yg sudah diakses sesuai dengan perubahan input dri user
+*/
+  
 function edit(id){
   let x = document.getElementById(`edit${list[i][1]}`)
   let neew = prompt("Edit?" , x[id])
