@@ -102,3 +102,10 @@ function hapus(i){
     x.remove()
 }
 
+function edit(id){
+  let x = document.getElementById(`edit${list[i][1]}`)
+  let neew = prompt("Edit?" , x[id])
+    x[id] = x
+
+  render()
+}
