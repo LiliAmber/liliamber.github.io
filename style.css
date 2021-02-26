@@ -1,7 +1,7 @@
 .title {
  display: flex;
  justify-content: center;
- margin-top: 10%;
+ margin-top: 32px;
 }
 
 .content {
@@ -14,107 +14,34 @@
 .button-wrapper {
   display: flex;
   justify-content: center;
-
 }
+
 .button-wrapper button {
   width: 200px;
 }
+
 .tabel-user {
+  padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 24px;  
 }
+
 .tabel-user .card {
   margin-left: 16px;
   margin-right: 16px;
 }
+
 .card-display {
 display: flex;
 justify-content: space-between;
 }
+
 .card-display .close-button:hover {
 cursor: pointer;
 }
-.icon-wrapper{
-  display: flex;
-  justify-content: center;
-  
-}
-.icon-eye{
-  margin-right: 32px;
-}
-.icon-eye :hover{
-  cursor: pointer;
-}
-.icon-pencil :hover {
-  cursor: pointer;
-}
-.icon-edit {
-  display: none;
-  justify-content: center;
-}
-.container-field{
-  display: flex;
-}
-.ipt {
-  display: none;
-}
-.icon-save{
-  margin-right: 32px;
-}
-/* .kartu{
-  display: inline-block;
-    width: 200px;
-    padding: 0 80px;
-    height: 150px;
-    font-size: 16px;
-    line-height: 80px;
-    border-radius: 10px;
-    background-color: black;
-    margin: 20px;
-    position: relative;
-    text-align: center
-}
-.kartu .nama {
-    position: absolute;
-    left:30px;
-    top: 20px;
-    font-size: 20px;
-    color: silver;
-}
-.kartu .close1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: silver;
-  display: inline-block;
-    width: 200px;
-    padding: 0 80px;
-    height: 150px;
-    font-size: 16px;
-    line-height: 80px;
-    border-radius: 10px;
-    background-color: black;
-    margin: 20px;
-    position: relative;
-    text-align: center
-}
-.kartu .nama {
-    position: absolute;
-    left:30px;
-    top: 20px;
-    font-size: 20px;
-    color: silver;
-    cursor:  pointer;
-}
 
-.kartu .Password {
-    right: 20px;
-    margin-top: 50px;
-    font-size: 16px;
-    color: silver;
-    position: absolute;
+.divider {
+  height: 1px;
+  background: black;
 }
-
-.kartu:hover .close {
-    color: gold;
-} */
