@@ -98,21 +98,43 @@ const formButton = document.querySelector(".btn");
 formButton.addEventListener("click",addId);
 
 //FUNCTION ADD DATA TO LIST => AMBIL DATA DARI FORM YG DIISI USER
+//VALIDASI INPUT DISINI JUGA
 function addId(event) {
   event.preventDefault();
-  idList.innerHTML = '';
-  list.push(
-    [formInputSite.value, formInputId.value,formInputPass.value]
-  );
-  render();
+  if(!formInputSite.value  || !formInputId.value || !formInputPass.value){
+    alert("Pastikan data sudah benar!")
+  } else{
+    idList.innerHTML = '';
+    list.push(
+      [formInputSite.value, formInputId.value,formInputPass.value]
+    );
+    render();
+  }
 }
 
 //FUNCTION EDIT USERNAME
 function edit(i){
-  let x = document.getElementById(`user${i}`);
-  let edit = prompt("apakah kamu ingin mengubah username ?" , x[i]);
+  let username = document.getElementById(`user${i}`);
+  let defaultValue = username.innerText.split(":")[1].trim()
+  let edit = prompt("apakah kamu ingin mengubah username ?" , defaultValue);
   let y = "Username:";
-  x.innerHTML = '';
-  x.innerHTML += y;
-  x.innerHTML += edit;
+  username.innerHTML = '';
+  username.innerHTML += y;
+
+  if (edit) {
+    username.innerHTML += edit;
+  } else {
+    username.innerHTML += defaultValue
+  }
 }
+
+//FUNCTION EDIT PASSWORD
+// function editPassword (i) {
+//   let a = document.getElementById(`password${i}`);
+//   let editPass = prompt("apakah kamu ingin mengubah password ?", x[i]);
+
+//   let b = "Password:"
+//   a.innerHTML += b
+//   a.innerHTML += editPass
+//   a.setAttribute("value")
+// }
