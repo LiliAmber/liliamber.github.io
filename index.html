@@ -4,53 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <title>Password Manager</title>
 </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Password Manager</a>
-        
-      
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Add User
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user-list.html">User List</a>
-            </li> 
-          </ul>
-        </div>
-      </nav>
-      <div class="title">
-        <h1>ADD USER</h1> 
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Password Manager</a>
+      <div class="collapse navbar-collapse" id="navbarColor01">
       </div>
-      <div class="content">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Username</label>
-          <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+    </nav>
+    
+    <div class="title">
+      <h1>ADD ACCOUNT</h1> 
+    </div>
+    <div class="content">
+      <div class="form-group">
+        <label for="exampleInputEmail1">SITE</label>
+        <input type="text" class="form-control formSite" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Site">
         </div>
-        
-        <div class="form-group">
-          <label for="exampleInputEmail1">Password</label>
-          <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter password">
-        </div>
-          
-        <div class="form-group">
-          <label for="exampleInputEmail1">URL</label>
-          <input type="text" class="form-control" id="url" aria-describedby="emailHelp" placeholder="Enter link">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="email" class="form-control formId" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+        <input type="password" class="form-control formPass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password">
         </div>
           
           <div class="button-wrapper">
             <button type="submit" value="add-data" class="btn btn-outline-primary" >Add</button>
           </div>
         </div>
+<<<<<<< HEAD
         <script src="./script.js"></script>
+=======
+      </div>
+      <div class="title">
+        <h1>LIST USER</h1> 
+      </div>
+      <div class="divider"></div>
+      <div class="tabel-user"> 
+      <!-- <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">User card</div>
+        <div class="card-body">
+          <p class="card-text">Username : asdkalsa</p>
+          <p class="card-text">Password : *****</p>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div> -->
+      </div>
+>>>>>>> 7151f11fbfebf13b817b55ec4400a7c298a95e1c
     </div>
-  </body>
+   
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
