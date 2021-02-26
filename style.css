@@ -1,7 +1,12 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .title {
  display: flex;
  justify-content: center;
- margin-top: 10%;
+ margin-top: 32px;
 }
 
 .content {
@@ -20,9 +25,14 @@
   width: 200px;
 }
 .tabel-user {
+  padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
+  overflow-x: auto;
+  max-height: 350px;
+  
+  
 }
 .tabel-user .card {
   margin-left: 16px;
@@ -62,6 +72,11 @@ cursor: pointer;
 .icon-save{
   margin-right: 32px;
 }
+.divider {
+  height: 1px;
+  background: black;
+}
+
 /* .kartu{
   display: inline-block;
     width: 200px;
